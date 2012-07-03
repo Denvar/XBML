@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <ImageView
+        android:id="@+id/artwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/grid014" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="#66000000">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                       
+                    <TextView
+                        android:id="@+id/seasons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="SEASONS"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/detail_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/seasons"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/holo_blue_light" />
+                    
+                    <ListView 
+                        android:id="@+id/season_list"
+                        android:layout_below="@id/detail_underline"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"	
+                        android:paddingTop="10dp"
+						android:layout_marginBottom="10dp"
+                        android:layout_height="fill_parent"/>
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                
+
+                    <RelativeLayout 
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="DETAILS"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/detail_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/textView1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/holo_blue_light" />
+                    
+                    
+                    <RelativeLayout
+                        android:id="@+id/tableLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/detail_underline"
+                        android:layout_centerHorizontal="true" >
+                            
+                            
+                    <TextView
+                        android:id="@+id/genre_heading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:text="Genre"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                    <TextView
+                        android:id="@+id/genre_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/genre_heading"
+                        android:textSize="14sp"
+                        android:text="Drama / Mysetery / Medical"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                                                
+                            
+                    <TextView
+                        android:id="@+id/rating_heading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/genre_heading"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:text="Rating"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                    <TextView
+                        android:id="@+id/rating_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rating_heading"
+                        android:layout_below="@id/genre_value"
+                        android:textSize="14sp"
+                        android:text="8.7 / 10"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rating_value"
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/genre_value"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:text="(15,478 votes)"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                            
+                    <TextView
+                        android:id="@+id/seasons_heading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rating_heading"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:text="Seasons"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                    <TextView
+                        android:id="@+id/seasons_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/seasons_heading"
+                        android:layout_below="@id/rating_value"
+                        android:textSize="14sp"
+                        android:text="8"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                             <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/seasons_value"
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/rating_value"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:text="(out of 9)"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                            
+                            
+                    <TextView
+                        android:id="@+id/episodes_heading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/seasons_heading"
+                        android:textSize="14sp"
+                        android:text="Episodes"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                    <TextView
+                        android:id="@+id/episodes_value"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/episodes_heading"
+                        android:layout_below="@id/seasons_value"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="166"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                                             <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/episodes_value"
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/seasons_value"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:text="(out of 178)"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                     
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tableLayout1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="PLOT"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/holo_blue_light" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                        android:layout_below="@+id/view1">
+				<RelativeLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:paddingBottom="10dp">
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textSize="14sp"
+                        android:gravity="fill_horizontal|fill_vertical"
+                        android:text="Based on Jeff Lindsay novels Darkly Dreaming Dexter and Dearly Devoted Dexter, this crime thriller follows Dexter Morgan, a forensic blood spatter expert for the Miami Metro Police Department. Thanks to a code instilled in him by his foster father, Harry, he hunts down people who have escaped justice and makes sure they are unable to get away with a crime again."
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>
+                </ScrollView>
+                </RelativeLayout>
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    
+</RelativeLayout>

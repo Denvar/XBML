@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_now_playing"
+        android:showAsAction="ifRoom|withText"
+        android:title="PLaying"/>
+    <item
+        android:id="@+id/menu_remote"
+        android:showAsAction="ifRoom|withText"
+        android:title="Remote"/>
+
+</menu>
